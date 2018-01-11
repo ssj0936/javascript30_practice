@@ -1,3 +1,5 @@
+[DEMO](https://ssj0936.github.io/javascript30_practice/01%20-%20JavaScript%20Drum%20Kit/mine/index.html)
+
 # 01 - JavaScript Drum Kit
 
 ### 1. ES6 related:

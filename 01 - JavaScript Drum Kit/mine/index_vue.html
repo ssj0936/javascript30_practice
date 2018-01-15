@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div class="mainPage">
+        <div class="keys">
+            <template v-for="keyData in keyDatas">
+            <div :data-key="keyData.keycode" class="key">
+                <span class="kbd">{{keyData.key}}</span>
+                <span class="sound">{{keyData.displayText}}</span>
+            </div>
+        </template>
+        </div>
+        <audio v-for="keyData in keyDatas" :src="'sounds/' + keyData.displayText + '.wav'" :data-key="keyData.keycode"></audio>
+    </div>
+    <script src="script_vue.js"></script>
+</body>
+
+</html>
